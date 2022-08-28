@@ -19,14 +19,14 @@ spec:
                 name: "walk-backend"
                 port:
                   number: 8080
-          - path: /auth
+          - path: /auths
             pathType: Prefix
             backend:  
               service:
                 name: "userinfo-backend"
                 port:
                   number: 8080 
-          - path: /userInfo
+          - path: /userInfos
             pathType: Prefix
             backend:  
               service:
@@ -45,6 +45,27 @@ spec:
             backend:  
               service:
                 name: "reservation-backend"
+                port:
+                  number: 8080
+          - path: /dailys
+            pathType: Prefix
+            backend:  
+              service:
+                name: "daily-backend"
+                port:
+                  number: 8080
+          - path: /walks
+            pathType: Prefix
+            backend:  
+              service:
+                name: "walk-backend" 
+                port:
+                  number: 8080
+          - path: /dogwalkerschedules
+            pathType: Prefix
+            backend:  
+              service:
+                name: "dogwalkerschedule-backend" 
                 port:
                   number: 8080
           - path: /
