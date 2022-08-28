@@ -33,7 +33,7 @@ spec:
                 name: "payment-backend"
                 port:
                   number: 8080
-          - path: /reservation
+          - path: /reservations
             pathType: Prefix
             backend:  
               service:
