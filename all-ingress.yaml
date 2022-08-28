@@ -18,8 +18,15 @@ spec:
               service:
                 name: "walk-backend"
                 port:
-                  number: 8080   
-          - path: /userInfos
+                  number: 8080
+          - path: /auth
+            pathType: Prefix
+            backend:  
+              service:
+                name: "userinfo-backend"
+                port:
+                  number: 8080 
+          - path: /userInfo
             pathType: Prefix
             backend:  
               service:
