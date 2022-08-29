@@ -175,7 +175,7 @@ create table user_info (
 	tel_no varchar(255), 
 	use_count double precision, 
 	user_nm varchar(255), 
-	user_role varchar(255), 
-	primary key (user_id),
-	walk_count double
+	user_role varchar(255),
+	walk_count double,
+	primary key (user_id)	
 ) engine=InnoDB ;
