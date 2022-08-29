@@ -69,19 +69,19 @@ spec:
                 port:
                   number: 8080
           - path: /alarms
-              pathType: Prefix
-              backend:
-                service:
-                  name: "alarm-backend"
-                  port:
-                    number: 8080
+            pathType: Prefix
+            backend:
+              service:
+                name: "alarm-backend"
+                port:
+                  number: 8080
           - path: /mypages
-              pathType: Prefix
-              backend:
-                service:
-                  name: "mypage-backend"
-                    port:
-                      number: 8080
+            pathType: Prefix
+            backend:
+              service:
+                name: "mypage-backend"
+                port:
+                  number: 8080
           - path: /
             pathType: Prefix
             backend:
