@@ -177,5 +177,4 @@ create table user_info (
 	user_nm varchar(255), 
 	user_role varchar(255), 
 	primary key (user_id) 
-) COLLATE='utf8mb4_general_ci' engine=InnoDB ;
-
+) engine=InnoDB ;
