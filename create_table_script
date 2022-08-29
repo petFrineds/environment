@@ -177,6 +177,5 @@ create table user_info (
 	user_nm varchar(255), 
 	user_role varchar(255), 
 	primary key (user_id),
-	walk_count double,
-	career double
+	walk_count double
 ) engine=InnoDB ;
