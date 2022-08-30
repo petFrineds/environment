@@ -26,7 +26,7 @@ CREATE TABLE `point` (
 	`reserved_id` BIGINT(20) NULL DEFAULT NULL,
 	`user_id` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
 	`user_name` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
-	`point_gubun` ENUM('PAY','EARN','REFUND','ENCAHS') NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
+	`point_gubun` ENUM('PAY','EARN','REFUND','ENCAHS','WAGE') NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
 	`point` DOUBLE NULL DEFAULT NULL,
 	`current_point` DOUBLE NULL DEFAULT NULL,
               `bank_name` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
