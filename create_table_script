@@ -8,7 +8,7 @@ CREATE TABLE `payment` (
 	`user_id` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
 	`user_name` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
 	`pay_type` ENUM('CARD','POINT') NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
-	`refund_yn` VARCHAR(1) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
+	`refund_yn` VARCHAR(1) NULL DEFAULT 'N' COLLATE 'utf8mb4_general_ci',
 	`card_company` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
 	`card_number` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
 	`card_valid_month` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
