@@ -187,6 +187,7 @@ create table user_info (
 	user_role varchar(255),
 	walk_count double,
 	primary key (user_id)	
-) engine=InnoDB ;
-
-
+) 
+COLLATE='utf8mb4_general_ci'
+ENGINE=InnoDB
+;
