@@ -183,7 +183,7 @@ create table user_info (
 	point_amount double precision, 
 	tel_no varchar(255), 
 	use_count double precision, 
-	user_nm varchar(255), 
+	user_nm varchar(255) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci', 
 	user_role varchar(255),
 	walk_count double,
 	primary key (user_id)	
