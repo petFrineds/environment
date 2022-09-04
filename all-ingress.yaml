@@ -5,6 +5,7 @@ metadata:
   name: "petfriend-ingress"
   namespace: default
   annotations:
+    nginx.ingress.kubernetes.io/auth-url: "http://k8s-default-petfrien-e22d96b656-324363646.us-west-2.elb.amazonaws.com/userInfos/checkDummy"
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
