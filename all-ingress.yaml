@@ -19,11 +19,11 @@ spec:
                 name: "walk-backend"
                 port:
                   number: 8080
-          - path: /auths
+          - path: /oauth
             pathType: Prefix
             backend:  
               service:
-                name: "userinfo-backend"
+                name: "petfriendsauth-backend"
                 port:
                   number: 8080 
           - path: /userInfos
