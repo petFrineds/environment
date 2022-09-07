@@ -187,7 +187,9 @@ create table user_info (
 	user_nm varchar(255) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci', 
 	user_role varchar(255),
 	walk_count double,
-	image_id  BIGINT(20),
+	mime_type VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
+	user_image BLOB NULL DEFAULT NULL,
+	original_name VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
 	primary key (user_id)	
 ) 
 COLLATE='utf8mb4_general_ci'
