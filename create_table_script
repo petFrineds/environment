@@ -16,7 +16,7 @@ CREATE TABLE `payment` (
 	`card_cvc` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
 	`amount` DOUBLE NULL DEFAULT NULL,
 	`refund_amount` DOUBLE NULL DEFAULT NULL,
-	`pay_date` DATETIME NULL DEFAULT NULL,
+	`pay_date` VARCHAR(255) NULL DEFAULT NULL,
 	`refund_date` DATETIME NULL DEFAULT NULL,
          PRIMARY KEY (`pay_id`) USING BTREE
 )
