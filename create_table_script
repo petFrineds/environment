@@ -14,6 +14,7 @@ CREATE TABLE `payment` (
 	`card_valid_month` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
 	`card_valid_year` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
 	`card_cvc` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
+	`card_approval_number` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
 	`amount` DOUBLE NULL DEFAULT NULL,
 	`refund_amount` DOUBLE NULL DEFAULT NULL,
 	`pay_date` DATETIME NULL DEFAULT NULL,
