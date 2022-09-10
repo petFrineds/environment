@@ -36,4 +36,8 @@ cd backend/Walk/manifests
 kubectl delete -f walk-deployment.yaml
 kubectl apply -f walk-deployment.yaml
 
+cd backend/ExternalMock/manifests
+kubectl delete -f external-deployment.yaml
+kubectl apply -f external-deployment.yaml
+
 kubectl get pod
