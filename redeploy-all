@@ -1,0 +1,32 @@
+su - ec2-user
+exit
+
+kubectl delete -f /home/ec2-user/backend/Alarm/manifests/alarm-deployment.yaml
+kubectl apply -f /home/ec2-user/backend/Alarm/manifests/alarm-deployment.yaml
+
+kubectl delete -f /home/ec2-user/backend/Daily/manifests/daily-deployment.yaml
+kubectl apply -f /home/ec2-user/backend/Daily/manifests/daily-deployment.yaml
+
+kubectl delete -f /home/ec2-user/backend/DogWalkerSchedule/manifests/dogwalkerschedule-deployment.yaml
+kubectl apply -f /home/ec2-user/backend/DogWalkerSchedule/manifests/dogwalkerschedule-deployment.yaml
+
+kubectl delete -f /home/ec2-user/backend/Payment/manifests/external-deployment.yaml
+kubectl apply -f /home/ec2-user/backend/Payment/manifests/external-deployment.yaml
+
+kubectl delete -f /home/ec2-user/backend/PetfrinedsAuth/manifests/petfriendsauth-deployment.yaml
+kubectl apply -f /home/ec2-user/backend/PetfrinedsAuth/manifests/petfriendsauth-deployment.yaml
+
+kubectl delete -f /home/ec2-user/backend/Reservation/manifests/reservation-deployment.yaml
+kubectl apply -f /home/ec2-user/backend/Reservation/manifests/reservation-deployment.yaml
+
+kubectl delete -f /home/ec2-user/backend/UserInfo/manifests/userInfo-deployment.yaml
+kubectl apply -f /home/ec2-user/backend/UserInfo/manifests/userInfo-deployment.yaml
+
+kubectl delete -f /home/ec2-user/backend/Walk/manifests/walk-deployment.yaml
+kubectl apply -f /home/ec2-user/backend/Walk/manifests/walk-deployment.yaml
+
+kubectl delete -f /home/ec2-user/backend/WalkExternalMock/manifests/external-deployment.yaml
+kubectl apply -f /home/ec2-user/backend/ExternalMock/manifests/external-deployment.yaml
+
+
+kubectl get pod
