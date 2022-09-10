@@ -83,6 +83,13 @@ spec:
                 name: "mypage-backend"
                 port:
                   number: 8080
+          - path: /external
+            pathType: Prefix
+            backend:
+              service:
+                name: "external-backend"
+                port:
+                  number: 8080                  
           - path: /
             pathType: Prefix
             backend:
