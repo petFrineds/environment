@@ -1,0 +1,92 @@
+{
+  "kind": "Service",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "kibana-kibana",
+    "namespace": "dapr-monitoring",
+    "uid": "4d2b37b3-6e23-4297-8583-283c17302b73",
+    "resourceVersion": "13401982",
+    "creationTimestamp": "2022-08-31T10:42:58Z",
+    "labels": {
+      "app": "kibana",
+      "app.kubernetes.io/managed-by": "Helm",
+      "heritage": "Helm",
+      "release": "kibana"
+    },
+    "annotations": {
+      "meta.helm.sh/release-name": "kibana",
+      "meta.helm.sh/release-namespace": "dapr-monitoring"
+    },
+    "managedFields": [
+      {
+        "manager": "helm",
+        "operation": "Update",
+        "apiVersion": "v1",
+        "time": "2022-08-31T10:42:58Z",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:metadata": {
+            "f:annotations": {
+              ".": {},
+              "f:meta.helm.sh/release-name": {},
+              "f:meta.helm.sh/release-namespace": {}
+            },
+            "f:labels": {
+              ".": {},
+              "f:app": {},
+              "f:app.kubernetes.io/managed-by": {},
+              "f:heritage": {},
+              "f:release": {}
+            }
+          },
+          "f:spec": {
+            "f:ports": {
+              ".": {},
+              "k:{\"port\":5601,\"protocol\":\"TCP\"}": {
+                ".": {},
+                "f:name": {},
+                "f:port": {},
+                "f:protocol": {},
+                "f:targetPort": {}
+              }
+            },
+            "f:selector": {
+              ".": {},
+              "f:app": {},
+              "f:release": {}
+            },
+            "f:sessionAffinity": {},
+            "f:type": {}
+          }
+        }
+      }
+    ]
+  },
+  "spec": {
+    "ports": [
+      {
+        "name": "http",
+        "protocol": "TCP",
+        "port": 5601,
+        "targetPort": 5601
+      }
+    ],
+    "selector": {
+      "app": "kibana",
+      "release": "kibana"
+    },
+    "clusterIP": "10.100.161.228",
+    "clusterIPs": [
+      "10.100.161.228"
+    ],
+    "type": "LoadBalancer",
+    "sessionAffinity": "None",
+    "ipFamilies": [
+      "IPv4"
+    ],
+    "ipFamilyPolicy": "SingleStack"
+  },
+  "status": {
+    "loadBalancer": {}
+  }
+}
